@@ -1,0 +1,2804 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+
+* {
+    margin: 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background-color: rgba(45, 8, 79, 0.79);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.navbar {
+    min-height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+
+}
+
+.nav-menu {
+    /* background-color: white; */
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+    margin-right: 190px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+.nav-branding {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: rgb(112, 153, 255);
+
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+
+}
+
+@media(max-width:1100px) {
+
+
+    .main {
+        height: 100vh;
+
+    }
+
+    .devinfo {
+        /* background-color: red; */
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        margin-top: 270px;
+        align-items: center;
+    }
+
+    .main .devinfo {
+        margin-top: 300px;
+    }
+
+    .devinfo .hello {
+        font-size: 43px;
+        margin-left: -176px;
+
+    }
+
+    .devinfo .name {
+        font-size: 63px;
+        margin-left: -35px;
+
+    }
+
+    .devinfo .about {
+        font-size: 24px;
+        margin-left: 73px;
+
+    }
+
+    .devinfo .buttons {
+        margin-left: -48px;
+    }
+
+    .contactform p {
+
+        font-size: 25px;
+
+    }
+
+    #service {
+        flex-direction: column;
+
+    }
+
+    .service .title {
+        font-size: 45px;
+    }
+
+    .box h2 {
+        font-size: 25px;
+    }
+
+    #service .box:hover {
+        position: fixed;
+
+
+    }
+
+
+
+}
+
+@media(max-width:800px) {
+    .devinfo .hello {
+
+        margin-left: -135px;
+
+    }
+
+    .devinfo .name {
+
+        margin-left: -7px;
+
+
+    }
+
+    .devinfo .about {
+
+        margin-left: 45px;
+
+    }
+
+    .devinfo .buttons {
+        margin-left: -48px;
+    }
+
+    .contactform p {
+
+        margin-left: -77px;
+
+    }
+
+
+
+
+}
+
+@media(max-width:900px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(33, 2, 53);
+
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu a {
+        color: rgb(255, 255, 255);
+
+    }
+
+
+
+
+
+}
+
+@media(max-width:650px) {
+    .devinfo .hello {
+
+        margin-left: -77px;
+        font-size: 39px;
+
+    }
+
+    .devinfo .name {
+
+        margin-left: 33px;
+        margin-top: -7px;
+
+
+
+    }
+
+    .devinfo .about {
+
+        margin-left: 45px;
+        margin-top: -3px;
+
+    }
+
+    .devinfo .buttons {
+
+        margin: -5px;
+        margin-top: 10px;
+
+    }
+
+    .devinfo .buttons .button {
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+
+    .contactform p {
+        font-size: 10px;
+    }
+
+
+
+
+}
+
+
+@media(max-width:500px) {
+    .devpic {
+        display: none;
+    }
+
+    .main .devinfo {
+        width: 100vw;
+        margin-top: 160px;
+    }
+
+    .devinfo .hello {
+        font-size: 35px;
+        margin-left: -240px;
+    }
+
+    .devinfo .name {
+        font-size: 55px;
+        margin-left: -100px;
+    }
+
+    .devinfo .about {
+        font-size: 30px;
+        margin-left: 68px;
+    }
+
+    .devinfo .buttons {
+        margin-left: -48px;
+    }
+
+    .contactform p {
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+
+
+}
+
+.devinfo {
+    /* background-color: red; */
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+
+}
+
+.hello {
+    font-size: 55px;
+    margin-left: -320px;
+
+}
+
+.name {
+    font-family: 'Lato', sans-serif;
+    /* font-weight: bold; */
+    font-size: 80px;
+    margin-left: -148px;
+    margin-top: -4px;
+
+}
+
+.about {
+    /* font-weight: bold; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-left: 159px;
+
+}
+
+.buttons {
+    margin-top: 30px;
+    margin-left: -140px;
+}
+
+.buttons button {
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(85, 6, 188);
+    margin: 15px;
+
+
+}
+
+.buttons button:hover {
+    background-color: rgb(27, 2, 61);
+    cursor: pointer;
+}
+
+
+
+.devpic {
+    /* background-color: green; */
+    width: 50vw;
+
+}
+
+.devpic img {
+    width: 30vw;
+    margin-top: 100px;
+    height: 60vh;
+    margin-left: 100px;
+}
+
+.main {
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.t {
+    height: 100vh;
+}
+
+
+.d {
+    background-color: white;
+    /* margin-top: 100px; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+.title {
+    font-size: 3.5rem;
+    padding: 12px;
+    padding-top: 80px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.sname {
+    font-size: 2.4rem;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#service {
+    margin: 34px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+
+
+}
+
+.service .title {
+    color: rgb(41, 13, 68);
+}
+
+#service .box {
+    border: 3px solid rgb(114, 40, 40);
+    border-radius: 45px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    flex-direction: column;
+
+
+}
+
+
+
+
+
+#service .box img {
+    height: 200px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+
+}
+
+/* Subject section */
+
+.subh {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(41, 13, 68);
+
+
+}
+
+
+
+
+.sec {
+    padding: 75px;
+}
+
+.service3 {
+    padding-top: 190px;
+}
+
+.sec h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sec img {
+    border-radius: 40px;
+    margin-bottom: 15px;
+}
+
+.sec .btn {
+    padding: 10px;
+    margin: 8px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(85, 6, 188);
+    font-size: 17px;
+
+}
+
+.sec .btn:hover {
+    color: rgb(85, 6, 188);
+    background-color: rgb(230, 207, 251);
+    cursor: pointer;
+}
+
+/* About Section  */
+
+.servab h1 {
+    padding-top: 170px;
+    /* padding-right: 283px; */
+    font-size: 68px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bolder;
+    color: rgb(63, 40, 84);
+    font-family: 'Lato', sans-serif;
+
+}
+
+.abmain {
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+}
+
+.submain {
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    background-color: rgb(196, 136, 252);
+}
+
+.abmain .subm {
+    display: flex;
+    /* margin: 50px; */
+    padding-bottom: 50px;
+    margin-top: 100px;
+    /* padding-left: 260px; */
+    justify-content: center;
+}
+
+#cont {
+    padding-left: 80px;
+    padding-right: 100px;
+    width: 800px;
+    line-height: 45px;
+}
+
+#pic img {
+    margin-left: 200px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+#cont p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.abmain {
+    padding-bottom: 100px;
+}
+
+.cert h1 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 68px;
+    font-weight: bold;
+    color: rgb(63, 40, 84);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.cert .j {
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 480px; */
+    padding: 15px;
+    justify-content: center;
+
+}
+
+.j h3 {
+
+    /* padding-right: 60px; */
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 27px;
+}
+
+.j .btn {
+    padding: 10px;
+    /* margin: 8px; */
+    /* margin-top: 20px; */
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(85, 6, 188);
+    font-size: 19px;
+    margin-left: 50px;
+
+}
+
+.j .btn:hover {
+    color: rgb(85, 6, 188);
+    background-color: rgb(230, 207, 251);
+    cursor: pointer;
+}
+
+
+/* Footer  */
+
+.contn .g {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(40, 38, 38);
+
+    margin-bottom: -110px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+
+
+
+
+}
+
+.contn {
+    margin-top: 85px;
+}
+
+.g .cont-item {
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 170px;
+    padding-bottom: 170px;
+
+
+}
+
+#it {
+    margin-left: 360px;
+}
+
+
+.list .list-items {
+    padding-top: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cont-item h2 {
+    color: white;
+    font-size: 19px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+/* -----------------footer section---------------------- */
+
+.container5 .footer {
+    background-color: black;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 27px 120px;
+    margin-top: 60px;
+}
+
+.footer .col {
+    /* background-color: rgb(255, 255, 255); */
+    height: 220px;
+    text-align: center;
+    margin: 15px;
+
+}
+
+.container5 .essential {
+    background-color: black;
+    height: 70px;
+
+
+}
+
+.essential p {
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.col h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.list .list-items {
+    margin: -13px 0;
+    text-decoration: none;
+
+}
+
+.list-items a {
+    color: white;
+    font-size: 20px;
+}
+
+.col p {
+    color: white;
+    font-size: 20px;
+}
+
+.col img {
+    font-size: 30px;
+}
+
+.btn #ytbtn {
+    background-color: red;
+    cursor: pointer;
+
+}
+
+.btn #libtn {
+    background-color: rgb(4, 4, 189);
+    cursor: pointer;
+
+}
+
+.btn #twbtn {
+    background-color: rgb(0, 170, 255);
+    cursor: pointer;
+}
+
+.btn button {
+    padding: 12px;
+    margin: 8px;
+    border-radius: 16px;
+    margin-top: 18px;
+
+
+}
+
+/* .submain .container5{
+    margin-bottom: -10px;
+} */
+#cont5 {
+    margin-top: -60px;
+}
+
+.abmain .container5 {
+    margin-bottom: -100px;
+}
+
+
+/* -------------contact page----------------- */
+.contactform {
+    /* background-color: red; */
+    /* width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 350px;
+
+
+}
+
+.contactform p {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(41, 13, 68);
+
+}
+
+.mail p {
+    font-size: 70px;
+}
+
+.mail a {
+    color: black;
+}
+
+.mail a:hover {
+    color: blue;
+}
+
+@media(max-width:390px) {
+
+    #service .box {
+        padding: 4px;
+        margin: 5px;
+    }
+
+    #service {
+        grid-template-columns: auto;
+    }
+
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 132px 235px;
+        padding: 9px;
+
+
+    }
+
+    .col h2 {
+        font-size: 10px;
+        margin-right: 11px;
+    }
+
+    .list-items a {
+        font-size: 9px;
+
+    }
+
+    .list .list-items {
+        padding-left: 1px;
+        width: 94px;
+        padding-top: 10px;
+    }
+
+    #footer-about {
+        margin-right: 18px;
+    }
+
+    .col p {
+        font-size: 13px;
+    }
+
+    .btn button {
+        padding: 4px;
+
+    }
+
+    #ytbtn p {
+        font-size: 10px;
+    }
+
+    #libtn p {
+        font-size: 10px;
+    }
+
+    #twbtn p {
+        font-size: 10px;
+    }
+
+    /* .btn{
+        display: flex;
+        flex-direction: row;
+        margin: 2px;
+    }
+     */
+    #col2 #brief {
+        padding-right: 11px;
+    }
+
+    .col3 img {
+        padding-left: 118px;
+        margin-top: -57px;
+    }
+
+    .col3 h2 {
+        padding-left: 157px;
+    }
+
+    .service .title {
+        font-size: 35px;
+    }
+
+    .devinfo .name {
+        font-size: 45px;
+    }
+
+    .devinfo .about {
+        font-size: 22px;
+    }
+
+    .buttons button {
+        padding: 12px;
+    }
+
+    .devinfo .hello {
+        font-size: 26px;
+        margin-left: -190px;
+        margin-bottom: 16px;
+    }
+
+    .container5 .essential {
+        height: 95px;
+    }
+
+    .subh {
+        font-size: 32px;
+        margin-top: -60px;
+    }
+
+    .sec {
+        padding: 25px;
+    }
+
+    .sec h2 {
+        font-size: 25px;
+    }
+
+    .sec .btn {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .contactform {
+        padding: 225px 0;
+        /* margin-top: 50px; */
+    }
+
+    .mail a {
+        text-align: center;
+        font-size: 54px;
+    }
+
+    .contactform p {
+        padding-left: 66px;
+        font-size: 25px;
+    }
+
+    .head {
+        padding: 10px 0;
+    }
+
+    .servab h1 {
+        font-size: 35px;
+        padding-top: 130px;
+    }
+
+    .subm {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90vw;
+        margin-right: -10px;
+
+    }
+
+    #pic img {
+        margin-left: 33px;
+        margin-top: -68px;
+    }
+
+    #cont p {
+        font-size: 16px;
+        width: 80vw;
+
+
+
+    }
+
+    #cont {
+        padding-left: 35px;
+        padding-right: 0;
+        width: 360px;
+        margin-right: 1px;
+    }
+
+    .cert h1 {
+        font-size: 38px;
+    }
+
+    .j h3 {
+        font-size: 16px;
+    }
+
+    .j .btn {
+        font-size: 8px;
+        margin-left: 29px;
+        margin-top: 13px;
+    }
+
+    .btn button {
+
+        margin: 0;
+
+        margin-top: 22px;
+
+
+    }
+
+}
+
+/* -----------media query for max 360px------------------- */
+@media(max-width:360px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 132px 225px;
+        padding: 9px;
+    }
+
+    #cont {
+        width: 342px;
+    }
+
+    #pic img {
+        margin-left: 22px;
+    }
+
+    .cert .j {
+        padding-right: 31px;
+    }
+    .contactform p{
+        font-size: 23px;
+    }
+    .mail a{
+        font-size: 45px;
+        padding: 0 29px;
+    }
+
+
+}
+
+@media(max-width:350px) and (min-width:320px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 132px 200px;
+        padding: 9px;
+    }
+
+    .col3 img {
+        padding-left: 90px;
+        margin-top: -45px;
+    }
+
+    .col3 h2 {
+        padding-left: 128px;
+    }
+
+}
+
+@media(max-width:320px) and (min-width:290px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 115px 185px;
+        padding: 9px;
+    }
+
+    .col3 img {
+        padding-left: 85px;
+        margin-top: -30px;
+    }
+
+    .col3 h2 {
+        padding-left: 120px;
+    }
+
+    .service .title {
+        font-size: 25px;
+    }
+
+}
+
+
+@media(max-width:440px) and (min-width:390px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 124px 290px;
+        padding: 9px;
+    }
+
+    .col3 img {
+        padding-left: 145px;
+        margin-top: -60px;
+    }
+
+    .col3 h2 {
+        padding-left: 178px;
+        font-size: 15px;
+    }
+
+    .service .title {
+        font-size: 25px;
+    }
+
+    #service {
+        grid-template-columns: 320px;
+    }
+
+    .btn button {
+        padding: 5px;
+
+    }
+
+    #ytbtn p {
+        font-size: 10px;
+    }
+
+    #libtn p {
+        font-size: 10px;
+    }
+
+    #twbtn p {
+        font-size: 10px;
+    }
+
+    #col1 h2 {
+        font-size: 15px;
+    }
+
+    #col1 a {
+        font-size: 13px;
+    }
+
+    #col2 h2 {
+        font-size: 16px;
+    }
+
+    #col2 p {
+        font-size: 13px;
+    }
+
+    /* .contactform {
+        padding: 31px;
+        padding-top: 230px;
+        padding-left: 107px;
+
+    }
+
+    .contactform p {
+        font-size: 30px;
+
+    }
+
+    .mail a {
+        font-size: 44px;
+    } */
+
+    .subm {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #pic img {
+        margin-left: 64px;
+        margin-top: -52px;
+        margin-bottom: 30px;
+    }
+
+    #cont {
+        width: 402px;
+        padding-left: 44px;
+        padding-right: 24px;
+    }
+
+    #cont p {
+        font-size: 18px;
+    }
+
+    #pic img {
+        margin-left: 50px;
+    }
+
+    .cert .j {
+        padding-right: 31px;
+    }
+
+    .servab h1 {
+        font-size: 50px;
+    }
+
+    .cert h1 {
+        font-size: 43px;
+    }
+
+    .j h3 {
+        font-size: 18px;
+    }
+
+    .j .btn {
+        font-size: 13px;
+        margin-top: 20px;
+        padding: 8px;
+    }
+}
+
+@media(max-width:410px) and (min-width:390px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 115px 276px;
+        padding: 9px;
+    }
+
+    .btn button {
+        padding: 5px;
+
+    }
+
+    #ytbtn p {
+        font-size: 10px;
+    }
+
+    #libtn p {
+        font-size: 10px;
+    }
+
+    #twbtn p {
+        font-size: 10px;
+    }
+
+    .col3 img {
+        padding-left: 127px;
+        margin-top: -60px;
+    }
+
+    .col3 h2 {
+        padding-left: 160px;
+        font-size: 15px;
+    }
+
+    .subh {
+        font-size: 39px;
+    }
+
+    .sec {
+        margin-left: -48px;
+        padding: 62px;
+    }
+
+    .sec h2 {
+        padding-left: 22px;
+        font-size: 26px;
+    }
+
+    .sec .btn {
+        padding: 7px;
+        margin-left: -4px;
+        font-size: 11px;
+    }
+
+    .sec #btn1 {
+        margin-left: 32px;
+    }
+
+    .contactform {
+        padding: 20px;
+        padding-top: 160px;
+        padding-left: 85px;
+        padding-right: 151px;
+
+
+    }
+
+    .contactform p {
+        font-size: 28px;
+        margin-right: -122px;
+        margin-top: 90px;
+
+    }
+
+    .mail a {
+        font-size: 43px;
+    }
+
+
+}
+
+@media(max-width:440px) and (min-width:410px) {
+    .subh {
+        font-size: 37px;
+    }
+
+    .sec {
+        margin-left: -48px;
+        padding: 62px;
+    }
+
+    .sec h2 {
+        padding-left: 22px;
+        font-size: 26px;
+    }
+
+    .sec .btn {
+        padding: 7px;
+        margin-left: -4px;
+        font-size: 11px;
+    }
+
+    .sec #btn1 {
+        margin-left: 32px;
+    }
+
+    .contactform {
+        padding: 20px;
+        padding-top: 160px;
+        padding-left: 85px;
+        padding-right: 151px;
+
+
+    }
+
+    .contactform p {
+        font-size: 28px;
+        margin-right: -122px;
+        margin-top: 90px;
+
+    }
+
+    .mail a {
+        font-size: 43px;
+    }
+
+}
+
+@media(max-width:550px) and (min-width:440px) {
+
+
+    .col3 img {
+        padding-left: 175px;
+        margin-top: -70px;
+    }
+
+    .col3 h2 {
+        padding-left: 210px;
+        font-size: 16px;
+    }
+
+    .service .title {
+        font-size: 25px;
+    }
+
+    .btn button {
+        padding: 5px;
+
+    }
+
+    #ytbtn p {
+        font-size: 10px;
+    }
+
+    #libtn p {
+        font-size: 10px;
+    }
+
+    #twbtn p {
+        font-size: 10px;
+    }
+
+    #col1 h2 {
+        font-size: 15px;
+    }
+
+    #col1 a {
+        font-size: 13px;
+    }
+
+    #col2 h2 {
+        font-size: 16px;
+    }
+
+    #col2 p {
+        font-size: 13px;
+    }
+
+    #service .box {
+        padding: 8px;
+        margin: 3px;
+        margin-bottom: 15px;
+    }
+
+    .box h2 {
+        font-size: 20px;
+    }
+
+    .buttons button {
+        padding: 10px;
+    }
+
+    .devinfo .hello {
+        margin-top: -189px;
+        font-size: 30px;
+    }
+
+    .devinfo .about {
+        font-size: 19px;
+    }
+
+    .devinfo .buttons {
+        display: grid;
+        grid-template-columns: 140px 124px;
+        margin-left: 53px;
+    }
+
+    .subm {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #pic img {
+        margin-left: 96px;
+        margin-top: -73px;
+        margin-bottom: 25px;
+    }
+
+    #cont p {
+        font-size: 19px;
+    }
+
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 115px 357px;
+        padding: 9px;
+    }
+
+    #cont {
+        padding-left: 50px;
+        width: 480px;
+        padding-right: 27px;
+    }
+
+    .servab h1 {
+        font-size: 54px;
+        padding-top: 140px;
+    }
+
+    .cert h1 {
+        font-size: 45px;
+    }
+
+    .j h3 {
+        font-size: 19px;
+    }
+
+    .j .btn {
+        font-size: 11px;
+        margin-top: 13px;
+    }
+
+    .cert .j {
+        margin-right: 23px;
+    }
+    .contactform p {
+        font-size: 28px;
+        margin-right: -122px;
+        margin-top: 90px;
+
+    }
+    .contactform{
+        padding: 164px;
+    }
+    .mail a{
+        font-size: 49px;
+    }
+
+
+}
+
+@media(max-width:480px) and (min-width:460px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 115px 357px;
+        padding: 9px;
+    }
+
+    .col3 img {
+        padding-left: 175px;
+        margin-top: -70px;
+    }
+
+    .col3 h2 {
+        padding-left: 210px;
+        font-size: 16px;
+    }
+
+    .devinfo .hello {
+        margin-top: -65px;
+    }
+
+    .subh {
+        font-size: 37px;
+    }
+
+    .sec {
+        margin-left: 17px;
+        padding: 62px;
+    }
+
+    .sec h2 {
+        /* padding-left: -6px; */
+        font-size: 26px;
+    }
+
+    .sec .btn {
+        padding: 10px;
+        margin-left: -4px;
+        font-size: 11px;
+    }
+
+    .sec #btn1 {
+        margin-left: 0px;
+    }
+
+    #service {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+
+}
+
+@media(max-width:460px) and (min-width:440px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 115px 320px;
+        padding: 9px;
+    }
+
+    .col3 img {
+        padding-left: 143px;
+        margin-top: -70px;
+    }
+
+    .col3 h2 {
+        padding-left: 176px;
+        font-size: 16px;
+    }
+
+    .btn button {
+        padding: 5px;
+
+    }
+
+    #ytbtn p {
+        font-size: 10px;
+    }
+
+    #libtn p {
+        font-size: 10px;
+    }
+
+    #twbtn p {
+        font-size: 10px;
+    }
+
+    .devinfo .hello {
+        margin-top: -77px;
+    }
+
+    #service {
+        grid-template-columns: auto;
+    }
+
+    .subh {
+        font-size: 45px;
+    }
+    #cont{
+        width: 453px;
+    }
+
+
+}
+
+@media(max-width:515px) and (min-width:480px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 115px 379px;
+        padding: 9px;
+    }
+
+    #service {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .subh {
+        font-size: 37px;
+    }
+
+    .sec {
+        margin-left: 12px;
+        padding: 62px;
+    }
+
+    .sec h2 {
+        /* padding-left: -6px; */
+        font-size: 26px;
+    }
+
+    .sec .btn {
+        padding: 10px;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .sec #btn1 {
+        margin-left: 0px;
+    }
+    .contactform p{
+        margin-right: -75px;
+    }
+
+}
+
+@media(max-width:550px) and (min-width:515px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 115px 403px;
+        padding: 9px;
+    }
+
+    #col3 img {
+        padding-left: 187px;
+    }
+
+    #col2 {
+        text-align: center;
+    }
+
+    #service {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .subh {
+        font-size: 46px;
+    }
+
+    .sec {
+        margin-left: 12px;
+        padding: 62px;
+    }
+
+    .sec h2 {
+
+        font-size: 31px;
+    }
+
+    .sec .btn {
+        padding: 10px;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .sec #btn1 {
+        margin-left: 0px;
+    }
+    #cont{
+        width: 533px;
+    }
+}
+
+@media(max-width:590px) and (min-width:550px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 140px 419px;
+        padding: 9px;
+    }
+
+
+    .btn button {
+        padding: 5px;
+
+    }
+
+    #ytbtn p {
+        font-size: 10px;
+    }
+
+    #libtn p {
+        font-size: 10px;
+    }
+
+    #twbtn p {
+        font-size: 10px;
+    }
+
+    #col1 h2 {
+        font-size: 15px;
+    }
+
+    #col1 a {
+        font-size: 13px;
+    }
+
+    #col2 h2 {
+        font-size: 16px;
+    }
+
+    #col2 p {
+        font-size: 13px;
+    }
+
+    .col3 img {
+        padding-left: 200px;
+        margin-top: -70px;
+    }
+
+    .col3 h2 {
+        padding-left: 230px;
+        font-size: 16px;
+    }
+
+    .buttons button {
+        padding: 9px;
+        margin: 6px;
+    }
+
+    .devinfo .hello {
+        font-size: 25px;
+        margin-top: -211px;
+    }
+
+    .devinfo .name {
+        font-size: 50px;
+    }
+
+    .devinfo .about {
+        font-size: 20px;
+        margin-left: 61px;
+    }
+
+    .service .title {
+        font-size: 39px;
+    }
+
+    #service {
+        grid-template-columns: 276px 276px;
+
+    }
+
+    .box h2 {
+        font-size: 20px;
+    }
+
+    #service {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .subh {
+        font-size: 46px;
+    }
+
+    .sec {
+        margin-left: 12px;
+        padding: 62px;
+
+    }
+
+    .sec h2 {
+
+        font-size: 31px;
+    }
+
+    .sec .btn {
+        padding: 10px;
+        margin-left: 5px;
+        font-size: 17px;
+    }
+
+    .sec #btn1 {
+        margin-left: 0px;
+    }
+
+    .subm {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .servab h1 {
+        font-size: 55px;
+    }
+
+    #pic img {
+        margin-left: 136px;
+        margin-top: -65px;
+        margin-bottom: 20px;
+    }
+
+    #cont p {
+        font-size: 19px;
+    }
+
+    #cont {
+        padding-left: 60px;
+        padding-right: 0px;
+        width: 526px;
+    }
+
+    .cert h1 {
+        font-size: 55px;
+    }
+
+    .j h3 {
+        font-size: 20px;
+    }
+
+    .j .btn {
+        font-size: 11px;
+        margin-top: 12px;
+    }
+
+    .cert .j {
+        margin-right: 20px;
+        margin-top: 11px;
+    }
+    .contactform{
+        padding: 80px;
+    }
+    .contactform p{
+        margin-top: 80px;
+        padding-left: 70px;
+    }
+    .mail a{
+        font-size: 55px;
+    }
+}
+
+@media(max-width:650px) and (min-width:590px) {
+    .buttons button {
+        padding: 9px;
+        margin: 6px;
+    }
+
+    .devinfo .hello {
+        font-size: 25px;
+        margin-top: -211px;
+    }
+
+    .devinfo .name {
+        font-size: 50px;
+    }
+
+    .devinfo .about {
+        font-size: 20px;
+        margin-left: 61px;
+    }
+
+    .service .title {
+        font-size: 39px;
+    }
+
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 50px 280px 158px;
+        height: 276px;
+
+
+    }
+
+    #col1 {
+        margin-left: -100px;
+    }
+
+    #col3 {
+        padding-right: 1px;
+    }
+
+    #col1 h2 {
+        font-size: 15px;
+    }
+
+    #col1 a {
+        font-size: 13px;
+    }
+
+    #col2 h2 {
+        font-size: 16px;
+    }
+
+    #col2 p {
+        font-size: 13px;
+    }
+
+    .col3 img {
+        padding-left: 10px;
+
+    }
+
+    .col3 h2 {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .btn button {
+        padding: 7px;
+
+    }
+
+    #ytbtn p {
+        font-size: 13px;
+    }
+
+    #libtn p {
+        font-size: 13px;
+    }
+
+    #twbtn p {
+        font-size: 13px;
+    }
+
+    #service {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .subh {
+        font-size: 46px;
+    }
+
+    .sec {
+        margin-left: 12px;
+        padding: 62px;
+
+    }
+
+    .sec h2 {
+
+        font-size: 31px;
+    }
+
+    .sec .btn {
+        padding: 10px;
+        margin-left: 5px;
+        font-size: 17px;
+    }
+
+    .sec #btn1 {
+        margin-left: 0px;
+    }
+
+    .subm {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+    #pic img {
+        margin-left: 168px;
+        margin-top: -65px;
+        margin-bottom: 20px;
+    }
+
+    #cont {
+
+        width: 600px;
+        padding-right: 0;
+    }
+
+    .contactform{
+        padding: 80px;
+    }
+    .contactform p{
+        margin-top: 80px;
+        padding-left: 70px;
+    }
+    .mail a{
+        font-size: 55px;
+    }
+
+}
+
+@media(max-width:710px) and (min-width:650px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 50px 364px 119px;
+        height: 276px;
+
+
+    }
+
+    #col1 {
+        margin-left: -100px;
+    }
+
+    #col3 {
+        padding-right: 1px;
+    }
+
+    #col1 h2 {
+        font-size: 15px;
+    }
+
+    #col1 a {
+        font-size: 13px;
+    }
+
+    #col2 h2 {
+        font-size: 16px;
+    }
+
+    #col2 p {
+        font-size: 13px;
+    }
+
+    .col3 img {
+        padding-left: 10pxpx;
+
+    }
+
+    .col3 h2 {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .btn button {
+        padding: 7px;
+
+    }
+
+    #ytbtn p {
+        font-size: 13px;
+    }
+
+    #libtn p {
+        font-size: 13px;
+    }
+
+    #twbtn p {
+        font-size: 13px;
+    }
+
+    .devinfo .hello {
+        font-size: 27px;
+        margin-top: -158px;
+    }
+
+    .devinfo .buttons {
+        margin-left: -7px;
+        margin-top: 12px;
+    }
+
+    .buttons button {
+        padding: 10px;
+        margin: 8px;
+    }
+
+    .devinfo .about {
+        margin-left: 71px;
+        font-size: 20px;
+    }
+
+    .subh {
+        font-size: 60px;
+        margin-bottom: 75px;
+    }
+
+    .sec {
+        margin-left: 12px;
+        padding: 9px;
+
+    }
+
+    .sec h2 {
+
+        font-size: 31px;
+
+    }
+
+    .sec .btn {
+        padding: 10px;
+        margin-left: 5px;
+        font-size: 17px;
+    }
+
+    .sec #btn1 {
+        margin-left: 0px;
+    }
+
+    .subm {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #pic img {
+        margin-top: -56px;
+        margin-bottom: 18px;
+    }
+
+    #cont {
+        padding-left: 53px;
+        padding-right: 0px;
+        width: 615px;
+    }
+
+    .cert h1 {
+        font-size: 58px;
+    }
+
+    .j h3 {
+        font-size: 22px;
+    }
+
+    .j .btn {
+        font-size: 12px;
+        margin-top: 17px;
+    }
+
+    .cert .j {
+        margin-right: 22px;
+    }
+    .contactform{
+        padding: 80px;
+    }
+    .contactform p{
+        margin-top: 80px;
+        padding-left: 70px;
+    }
+    .mail a{
+        font-size: 55px;
+    }
+
+
+
+}
+
+
+
+@media(max-width:790px) and (min-width:710px) {
+    .devinfo .hello {
+        font-size: 27px;
+        margin-top: -158px;
+    }
+
+    .devinfo .buttons {
+        margin-left: -7px;
+        margin-top: 12px;
+    }
+
+    .buttons button {
+        padding: 11px;
+        margin: 11px;
+    }
+
+    .devinfo .about {
+        margin-left: 71px;
+        font-size: 20px;
+    }
+
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 50px 367px 184px;
+        height: 276px;
+
+
+    }
+
+    #col1 {
+        margin-left: -100px;
+    }
+
+    #col3 {
+        padding-right: 1px;
+    }
+
+    #col1 h2 {
+        font-size: 15px;
+    }
+
+    #col1 a {
+        font-size: 13px;
+    }
+
+    #col2 h2 {
+        font-size: 16px;
+    }
+
+    #col2 p {
+        font-size: 13px;
+    }
+
+    .col3 img {
+        padding-left: 10px;
+
+    }
+
+    .col3 h2 {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .btn button {
+        padding: 7px;
+
+    }
+
+    #ytbtn p {
+        font-size: 13px;
+    }
+
+    #libtn p {
+        font-size: 13px;
+    }
+
+    #twbtn p {
+        font-size: 13px;
+    }
+
+    .subh {
+        font-size: 60px;
+        margin-bottom: 75px;
+    }
+
+    .sec {
+        margin-left: 12px;
+        padding: 9px;
+
+    }
+
+    .sec h2 {
+
+        font-size: 31px;
+
+    }
+
+    .sec .btn {
+        padding: 10px;
+        margin-left: 5px;
+        font-size: 17px;
+    }
+
+    .sec #btn1 {
+        margin-left: 0px;
+    }
+
+    .subm {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #pic img {
+        margin-left: 230px;
+        margin-top: -61px;
+        margin-bottom: 22px;
+    }
+
+    .cert h1 {
+        font-size: 62px;
+    }
+
+    .j h3 {
+        font-size: 23px;
+    }
+
+    .j .btn {
+        font-size: 16px;
+        margin-top: 17px;
+    }
+
+    .cert .j {
+        margin-right: 19px;
+    }
+
+    #cont {
+        padding-left: 80px;
+        padding-right: 0;
+        width: 663px;
+    }
+    .contactform{
+        padding: 80px;
+    }
+    .contactform p{
+        margin-top: 80px;
+        padding-left: 70px;
+    }
+    .mail a{
+        font-size: 55px;
+    }
+
+
+}
+
+@media(max-width:850px) and (min-width:790px) {
+    .devinfo .hello {
+        font-size: 27px;
+        margin-top: -158px;
+    }
+
+    .devinfo .buttons {
+        margin-left: -7px;
+        margin-top: 12px;
+    }
+
+    .buttons button {
+        padding: 11px;
+        margin: 11px;
+    }
+
+    .devinfo .about {
+        margin-left: 71px;
+        font-size: 20px;
+    }
+
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 50px 474px 173px;
+        height: 276px;
+
+
+    }
+
+    #col1 {
+        margin-left: -100px;
+    }
+
+    #col3 {
+        padding-right: 1px;
+    }
+
+    #col1 h2 {
+        font-size: 15px;
+    }
+
+    #col1 a {
+        font-size: 13px;
+    }
+
+    #col2 h2 {
+        font-size: 16px;
+    }
+
+    #col2 p {
+        font-size: 13px;
+    }
+
+    .col3 img {
+        padding-left: 10px;
+
+    }
+
+    .col3 h2 {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .btn button {
+        padding: 7px;
+
+    }
+
+    #ytbtn p {
+        font-size: 13px;
+    }
+
+    #libtn p {
+        font-size: 13px;
+    }
+
+    #twbtn p {
+        font-size: 13px;
+    }
+
+    .subh {
+        font-size: 60px;
+        margin-bottom: 75px;
+    }
+
+    .sec {
+        margin-left: 12px;
+        padding: 9px;
+
+    }
+
+    .sec h2 {
+
+        font-size: 31px;
+
+    }
+
+    .sec .btn {
+        padding: 10px;
+        margin-left: 5px;
+        font-size: 17px;
+    }
+
+    .sec #btn1 {
+        margin-left: 0px;
+    }
+    #cont{
+        padding-left: 35px;
+    }
+    #pic img{
+        margin-left: -2px;
+        padding-right: 44px;
+        border-radius: 45px;
+        margin-top: 125px;
+    }
+    .j .btn{
+        font-size: 14px;
+        margin-top: 17px;
+    }
+    .cert .j{
+        margin-right: 26px;
+    }
+    .contactform{
+        padding: 80px;
+    }
+    .contactform p{
+        margin-top: 80px;
+        padding-left: 70px;
+    }
+    .mail a{
+        font-size: 55px;
+    }
+}
+
+@media(max-width:900px) and (min-width:850px) {
+    .devinfo .hello {
+        font-size: 27px;
+        margin-top: -158px;
+    }
+
+    .devinfo .buttons {
+        margin-left: -7px;
+        margin-top: 12px;
+    }
+
+    .buttons button {
+        padding: 11px;
+        margin: 11px;
+    }
+
+    .devinfo .about {
+        margin-left: 71px;
+        font-size: 20px;
+    }
+
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 50px 500px 173px;
+        height: 276px;
+
+
+    }
+
+    #col1 {
+        margin-left: -100px;
+    }
+
+    #col3 {
+        padding-right: 1px;
+    }
+
+    #col1 h2 {
+        font-size: 15px;
+    }
+
+    #col1 a {
+        font-size: 13px;
+    }
+
+    #col2 h2 {
+        font-size: 16px;
+    }
+
+    #col2 p {
+        font-size: 13px;
+    }
+
+    .col3 img {
+        padding-left: 10px;
+
+    }
+
+    .col3 h2 {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .btn button {
+        padding: 7px;
+
+    }
+
+    #ytbtn p {
+        font-size: 13px;
+    }
+
+    #libtn p {
+        font-size: 13px;
+    }
+
+    #twbtn p {
+        font-size: 13px;
+    }
+
+
+
+    .sec {
+        margin-left: 12px;
+        padding: 9px;
+
+    }
+
+    .sec h2 {
+
+        font-size: 31px;
+
+    }
+
+    .sec .btn {
+        padding: 10px;
+        margin-left: 5px;
+        font-size: 17px;
+    }
+
+    .sec #btn1 {
+        margin-left: 0px;
+    }
+
+    #cont{
+        padding-left: 35px;
+    }
+    #pic img{
+        margin-left: -2px;
+        padding-right: 44px;
+        border-radius: 45px;
+        margin-top: 125px;
+    }
+    .j .btn{
+        font-size: 14px;
+        margin-top: 17px;
+    }
+    .cert .j{
+        margin-right: 26px;
+    }
+    .contactform{
+        padding: 80px;
+    }
+    .contactform p{
+        margin-top: 115px;
+        padding-left: 0;
+    }
+    .mail a{
+        font-size: 55px;
+    }
+}
+
+@media(max-width:1000px) and (min-width:900px) {
+    .container5 .footer {
+        display: grid;
+        grid-template-columns: 94px 517px 173px;
+        height: 276px;
+
+
+    }
+
+    .nav-menu {
+        margin-right: 58px;
+        gap: 45px;
+    }
+
+    #col1 {
+        margin-left: -100px;
+    }
+
+    #col3 {
+        padding-right: 1px;
+    }
+
+    .btn button {
+        padding: 7px;
+
+    }
+
+    #ytbtn p {
+        font-size: 13px;
+    }
+
+    #libtn p {
+        font-size: 13px;
+    }
+
+    #twbtn p {
+        font-size: 13px;
+    }
+
+    .devinfo .hello {
+        font-size: 27px;
+        margin-top: -158px;
+    }
+
+    .devinfo .buttons {
+        margin-left: -7px;
+        margin-top: 12px;
+    }
+
+    .buttons button {
+        padding: 11px;
+        margin: 11px;
+    }
+
+    .devinfo .about {
+        margin-left: 71px;
+        font-size: 20px;
+    }
+
+    #cont{
+        padding-left: 35px;
+    }
+    #pic img{
+        margin-left: -2px;
+        padding-right: 44px;
+        border-radius: 45px;
+        margin-top: 125px;
+    }
+    .j .btn{
+        font-size: 14px;
+        margin-top: 17px;
+    }
+    .cert .j{
+        margin-right: 26px;
+    }
+    .contactform{
+        padding: 80px;
+    }
+    .contactform p{
+        margin-top: 115px;
+        padding-left: 0;
+        font-size: 30px;
+    }
+    .mail a{
+        font-size: 50px;
+    }
+}
+
+@media(max-width:1280px) and (min-width:1000px) {
+    .btn button {
+        padding: 7px;
+
+    }
+
+    #ytbtn p {
+        font-size: 13px;
+    }
+
+    #libtn p {
+        font-size: 13px;
+    }
+
+    #twbtn p {
+        font-size: 13px;
+    }
+
+    .container5 .footer {
+        height: 276px;
+    }
+
+    .devinfo .hello {
+        font-size: 27px;
+        margin-top: 8px;
+    }
+
+    .devinfo .buttons {
+        margin-left: -7px;
+        margin-top: 12px;
+    }
+
+    .buttons button {
+        padding: 11px;
+        margin: 11px;
+    }
+
+    .devinfo .about {
+        margin-left: 71px;
+        font-size: 26px;
+    }
+
+    .devinfo .name {
+        margin-left: -229px;
+        font-size: 45px;
+    }
+
+    .service .title {
+        font-size: 49px;
+
+    }
+
+    .nav-menu {
+        margin-right: 58px;
+        gap: 45px;
+    }
+
+    #cont{
+        padding-left: 35px;
+    }
+    #pic img{
+        margin-left: -2px;
+        padding-right: 44px;
+        border-radius: 45px;
+        margin-top: 60px;
+    }
+    .j .btn{
+        font-size: 14px;
+        margin-top: 17px;
+    }
+    .cert .j{
+        margin-right: 26px;
+    }
+    .contactform{
+        padding: 80px;
+    }
+    .contactform p{
+        margin-top: 140px;
+        padding-left: 0;
+        font-size: 30px;
+    }
+    .mail a{
+        font-size: 60px;
+    }
+}
+
+@media(min-width: 1280px) {
+    .devinfo .hello {
+        font-size: 35px;
+        margin-top: 8px;
+    }
+
+    .devinfo .buttons {
+        margin-left: -218px;
+        margin-top: 25px;
+    }
+
+    .buttons button {
+        padding: 11px;
+        margin: 11px;
+    }
+
+    .devinfo .about {
+        margin-left: 71px;
+        font-size: 33px;
+    }
+
+    .devinfo .name {
+        margin-left: -229px;
+        font-size: 61px;
+    }
+
+    .container5 .footer {
+        height: 317px;
+    }
+
+    .nav-menu {
+        margin-right: 58px;
+        gap: 45px;
+    }
+    #pic img{
+        margin-left: 43px;
+        margin-top: 60px;
+    }
+    .contactform{
+        padding: 80px;
+    }
+    .contactform p{
+        margin-top: 140px;
+        padding-left: 0;
+    
+    }
+}
